@@ -1,0 +1,50 @@
+$padding: 10px !default
+$display: grid !default
+$primary-color: rgba(0, 0, 0, 0.3) !default
+$second-color: rgba(0, 0, 0, 0.5) !default
+
+@mixin color($color)
+  color: $color
+
+@mixin grid-template-columns($nbcol)
+  display: $display
+  grid-template-columns: repeat($nbcol, minmax(0, 100rem / $nbcol))
+
+@mixin grid-template-rows($nbrow)
+  display: $display
+  grid-template-rows: repeat($nbrow, minmax(0, fit-content / $nbrow))
+
+@mixin grid-column($start, $end)
+  grid-column-start: $start
+  grid-column-end: $end
+
+@mixin grid-row($start, $end)
+  grid-row-start: $start
+  grid-row-end: $end
+
+@mixin grid_item()
+  padding: $padding
+  box-shadow: 2px 2px $primary-color, 0.1em 0 0.4em $primary-color
+
+@mixin header()
+  box-shadow: 5px 5px 5px $second-color
+  padding: 2px
+
+@mixin img($width, $height)
+  width: $width
+  height: $height
+  box-sizing: border-box
+  background-size: cover
+  @include grid-row(1, 2)
+
+@mixin figcaption_type($type:"type")
+  @if($type == "large")
+    @include grid-row(2, 5)
+    padding: $padding
+
+  @if($type == "small")
+    @include grid-row(2, 11)
+    padding: $padding
+
+@mixin transform($angle)
+  transform: rotate($angle)
