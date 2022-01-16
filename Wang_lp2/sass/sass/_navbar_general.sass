@@ -1,0 +1,51 @@
+@import "navbar"
+
+@media screen and (min-width: 60em)
+
+  nav
+    height: $height-nav
+
+  nav > ul
+    @include fond-color(orange)
+    @include justification(flex-end)
+    display: flex
+    flex-direction: row
+    height: inherit
+
+  nav > ul > li
+    @include fond-color(orange)
+    margin-right: 5%
+
+@media screen and (max-width: 60em)
+
+  nav
+    height: $height-nav
+
+
+  nav > ul
+    @include fond-color(red)
+    @include justification(left)
+    display: flex
+    flex-direction: row
+    height: inherit
+
+  nav > ul > li
+    margin-right: 5%
+
+@media screen and (max-width: 35em)
+  nav
+    height: 200px
+
+  nav > ul
+    @include fond-color(pink)
+    @include justification(center)
+    display: flex
+    flex-direction: column
+    padding: 0
+    height: inherit
+
+  nav > ul > li
+    text-align: center
+    height: inherit
+    border: 2px solid orangered
+    margin-right: unset

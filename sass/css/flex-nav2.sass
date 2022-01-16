@@ -1,0 +1,13 @@
+@mixin menu-variant($background, $justify-content)
+  background: $background
+  justify-content: $justify-content
+
+@media screen and (min-width: 60em)
+  ul
+    @include menu-variant(pink, left)
+
+
+  li
+    @extend ul
+
+

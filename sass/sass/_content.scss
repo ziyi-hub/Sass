@@ -1,0 +1,61 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: white;
+$seconde_color: black;
+
+.content{
+  font: 100% $font-stack;
+  color: $primary-color;
+  height: 250px;
+  border: 2px solid $seconde_color;
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: abs(20px);
+  width: 70em;
+}
+
+
+
+@mixin taille($width: 90%, $height: 50px){
+  width: $width;
+  height: $height;
+}
+
+
+@mixin background-color($backColor: $seconde_color){
+  background-color: $seconde_color;
+}
+
+
+@mixin font-size(){
+  font-size: larger;
+}
+
+
+
+@mixin padding(){
+  padding: abs(20px);
+}
+
+.content > h1{
+  font-weight: bold;
+  @include taille;
+  @include background-color;
+  @include font-size;
+  @include padding;
+}
+
+
+
+.content > h1:hover{
+  font-size: 3em;
+  @if(lightness($seconde_color) > 50%){
+    background-color: lighten($seconde_color, 20%);
+  }
+}
+
+
+
+
+
+
+
+

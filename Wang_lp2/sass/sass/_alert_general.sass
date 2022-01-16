@@ -1,0 +1,15 @@
+@import "alert"
+
+.alert
+  @include alert
+  &-informative
+    @include alert_type("informative")
+
+  &-avertissement
+    @include alert_type("avertissement")
+
+  &-danger
+    @include alert_type("danger")
+
+  &-success
+    @include alert_type("success")

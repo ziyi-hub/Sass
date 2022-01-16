@@ -1,0 +1,34 @@
+.alert {
+  color: black;
+  border-color: 2px solide black;
+  background: grey;
+  font-size: 2em;
+  width: 400px;
+  height: 200px;
+}
+
+.alert-informative {
+  color: red;
+}
+
+.alert-avertissement {
+  color: red;
+}
+
+.alert-danger {
+  color: red;
+}
+
+.alert-success {
+  color: red;
+}
+
+button.ok {
+  background-color: #00E676;
+}
+
+button.ko {
+  background-color: #a21318;
+}
+
+/*# sourceMappingURL=td7.11.2.css.map */

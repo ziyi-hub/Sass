@@ -1,0 +1,35 @@
+@media screen and (min-width:35em) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+@media screen and (orientation: landscape) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section{
+        display: inherit;
+        flex-direction: row;
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (min-width:60em) {
+    body{
+        display: flex;
+        flex-direction: row;
+    }
+
+    section{
+        display: initial;
+    }
+}
+

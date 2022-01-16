@@ -1,0 +1,30 @@
+
+
+@mixin alert-variant($background, $border, $font-size, $width, $height) {
+  border-color: $border;
+  background: $background;
+  font-size: $font-size;
+  width: $width;
+  height: $height;
+}
+
+@mixin couleur($color: black) {
+  color: $color;
+}
+
+@mixin mixed() {
+  @include couleur;
+  @include alert-variant(grey, 2px solide black, 2em, 400px, 200px);
+}
+
+.alert{
+  @include mixed;
+}
+
+$types: ("informative", "avertissement", "danger", "success");
+
+@each $state in $types {
+  .alert-#{$state} {
+    @include couleur(red)
+  }
+}

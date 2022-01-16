@@ -1,0 +1,79 @@
+@import "grille"
+
+@media screen and (max-width: 120em)
+  %flex-1
+    @include col
+    @include col-size(1)
+
+  %flex-2
+    @include col
+    @include col-size(2)
+
+  %menu-row
+    @include menu-variant
+
+  .c1
+    border-left: 2px solid black
+    padding-left: 5px
+    width: $one-colume-goutter
+
+  .c2
+    @extend %flex-1
+
+  .c4
+    @extend %flex-2
+
+  body
+    &> .main
+      @include menu-variant
+      flex-wrap: $flex-wrap
+      flex-flow: $flex-direction
+
+  .row
+    @include menu-variant
+    margin: 1.6%
+
+  .col
+    @include col
+    @include col-size(5)
+
+
+  .menu
+    @extend %flex-1
+    color: #FFFFFF
+    background-color: $primary-color-grille
+    font-size: $font-size-grille
+    padding-left: 50px
+
+@media screen and (max-width: 35em)
+  .c1
+    border-left: 2px solid black
+    padding-left: 5px
+    width: $one-colume-goutter
+
+  .c4
+    @include col
+    @include col-size(2)
+
+  .c2
+    @include col
+    @include col-size(1)
+
+  body
+    &> .main
+      @include menu-variant($display, column)
+      flex-wrap: $flex-wrap
+      flex-flow: column
+
+  .row
+    @include menu-variant
+    margin: 1.6%
+
+  .menu
+    color: $seconde-color-grille
+    background-color: $primary-color-grille
+    font-size: $font-size-grille
+
+  ul
+    @include menu-variant
+    justify-content: space-around

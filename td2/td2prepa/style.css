@@ -1,0 +1,67 @@
+
+    body{
+        font-size: 2em;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    .gauche{
+        text-align: left;
+    }
+
+    .droite{
+        text-align: right;
+    }
+
+    #centre{
+        text-align: center;
+    }
+
+    #justifie{
+        text-align: justify;
+    }
+
+    p.small {
+        line-height: 70%;
+        font-size: inherit;
+        font-family: inherit;
+        background-color: pink;
+        color: purple;
+    }
+
+    p.big {
+        line-height: 300%;
+        font-size: inherit;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    body > p:nth-child(1){
+        background-color: #6bebd1;
+    }
+
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot);
+        src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot) format('embedded-opentype'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+    }
+
+
+    h2{
+        font-family: "Open Sans", serif;
+        font-style: normal;
+    }
+
+
+    /**
+    https://www.fontsquirrel.com
+     */
+
+    @font-face {
+        font-family: "Ziyi";
+        src: url(AlexBrush-Regular.ttf) format("truetype");
+    }
+
+    h1{
+        font-family: "Ziyi", serif;
+    }

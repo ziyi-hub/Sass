@@ -1,0 +1,44 @@
+$largeur-defaut: 50px !default;
+$hauteur-defaut: 50px !default;
+$border-defaut: 2px !default;
+$primary-color-bouton: yellow !default;
+
+@mixin button($color: $primary-color-bouton, $border: $border-defaut) {
+  text-align: center;
+  background-color: $color;
+  border: $border solid darken($color, 10%);
+  border-radius: 10%;
+}
+
+@mixin bouton_type($style:"style"){
+  @if($style == "classic"){
+    @include button;
+  }
+
+  @if($style == "flat"){
+    @include button(pink, 5px);
+  }
+
+  @if($style == "outline"){
+    @include button(orange, 10px);
+    background-color: unset;
+  }
+}
+
+@mixin bouton_size($taille:"taille"){
+  @if($taille == "small"){
+    width: $largeur-defaut;
+    height: $hauteur-defaut;
+  }
+
+  @if($taille == "medium"){
+    width: 100px;
+    height: 100px;
+  }
+
+  @if($taille == "large"){
+    width: 200px;
+    height: 200px;
+  }
+}
+

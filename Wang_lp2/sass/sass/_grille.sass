@@ -1,0 +1,22 @@
+$flex-direction: row !default
+$display: flex !default
+$flex: 0 1 auto !default
+$primary-color-grille: black !default
+$seconde-color-grille: #FFFFFF !default
+$font-size-grille: 2em !default
+$flex-wrap: wrap !default
+$goutter: 1.2% !default
+$nbcol: 6 !default
+$one-colume-goutter : (100% - ( $nbcol + 1 ) * $goutter) / $nbcol !default
+
+@mixin col-size($num: $flex)
+  flex: $num
+
+@mixin col()
+  flex-grow: 0
+  flex-shrink: 0
+  box-sizing: border-box
+
+@mixin menu-variant($display: $display, $flex-direction: $flex-direction)
+  display: $display
+  flex-direction: $flex-direction

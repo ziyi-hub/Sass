@@ -1,0 +1,51 @@
+$font-stack: Helvetica, sans-serif !default;
+$border : 2px solid black !default;
+$font-size : 2em !default;
+$width-alert : 600px !default;
+$height-alert : 400px !default;
+$primary-color-alert: black !default;
+$seconde_color-alert: white !default;
+$padding-alert: 20px !default;
+$text-align-alert: center !default;
+
+@mixin alert($border: $border, $font-size: $font-size, $width: $width-alert, $height: $height-alert, $color: $seconde_color-alert, $padding: $padding-alert, $text-align: $text-align-alert) {
+  border: $border;
+  font-size: $font-size;
+  width: $width;
+  height: $height;
+  font-style: $font-stack;
+  color: $seconde_color-alert;
+  padding: $padding;
+  text-align: $text-align;
+}
+
+@mixin couleur($background: $primary-color-alert) {
+  background-color: $background;
+}
+
+@mixin alert_type($type:"type"){
+
+  @if($type == "informative"){
+    @include alert;
+    @include couleur(#008bff);
+  }
+
+  @if($type == "avertissement"){
+    @include alert;
+    @include couleur(orange);
+  }
+
+  @if($type == "danger"){
+    @include alert;
+    @include couleur(red);
+  }
+
+  @if($type == "success"){
+    @include alert;
+    @include couleur(yellowgreen);
+  }
+
+}
+
+
+

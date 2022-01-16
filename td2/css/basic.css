@@ -1,0 +1,59 @@
+p {
+    display: inline-block;
+    width: 13rem;
+    height: 5rem;
+    padding: 1rem;
+    border: 1px solid grey;
+    vertical-align: top;
+}
+
+.ib {
+    display: inline-block;
+    width: .8em;
+    height: .8em;
+    background-color: black;
+}
+
+#ib1{
+    vertical-align: bottom;
+}
+
+#ib2{
+    vertical-align: top;
+}
+
+#ib3{
+ vertical-align: baseline;
+}
+
+body > p:nth-child(1){
+    height: fit-content;
+    /*line-height: 150%;*/
+    line-height: 1.5;
+    text-align: justify;
+}
+
+body > p:nth-child(2){
+    overflow-y:scroll;
+    text-align: right;
+    word-wrap:break-word;
+}
+
+body > p:nth-child(3){
+    overflow: hidden;
+    word-spacing: 0.5rem;
+}
+
+body > p:nth-child(4){
+    white-space: nowrap;
+    overflow-x: scroll;
+    text-overflow: ellipsis;
+}
+
+body > p:nth-child(5){
+    white-space: pre-wrap;
+    word-break: break-all;
+    overflow-y:scroll;
+    text-align: justify;
+    height: 10rem;
+}

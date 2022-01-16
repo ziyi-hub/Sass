@@ -1,0 +1,240 @@
+.alert {
+  border: 2px solid black;
+  font-size: 2em;
+  width: 600px;
+  height: 400px;
+  font-style: Helvetica, sans-serif;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.alert-informative {
+  border: 2px solid black;
+  font-size: 2em;
+  width: 600px;
+  height: 400px;
+  font-style: Helvetica, sans-serif;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  background-color: #008bff;
+}
+.alert-avertissement {
+  border: 2px solid black;
+  font-size: 2em;
+  width: 600px;
+  height: 400px;
+  font-style: Helvetica, sans-serif;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  background-color: orange;
+}
+.alert-danger {
+  border: 2px solid black;
+  font-size: 2em;
+  width: 600px;
+  height: 400px;
+  font-style: Helvetica, sans-serif;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  background-color: red;
+}
+.alert-success {
+  border: 2px solid black;
+  font-size: 2em;
+  width: 600px;
+  height: 400px;
+  font-style: Helvetica, sans-serif;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  background-color: yellowgreen;
+}
+
+.btn-classic {
+  text-align: center;
+  background-color: yellow;
+  border: 2px solid #cccc00;
+  border-radius: 10%;
+}
+.btn-flat {
+  text-align: center;
+  background-color: pink;
+  border: 5px solid #ff8da1;
+  border-radius: 10%;
+}
+.btn-outline {
+  text-align: center;
+  background-color: orange;
+  border: 10px solid #cc8400;
+  border-radius: 10%;
+  background-color: unset;
+}
+
+.btn-small {
+  width: 50px;
+  height: 50px;
+}
+.btn-medium {
+  width: 100px;
+  height: 100px;
+}
+.btn-large {
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (min-width: 60em) {
+  nav {
+    height: 80px;
+  }
+
+  nav > ul {
+    background-color: orange;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+  }
+
+  nav > ul > li {
+    background-color: orange;
+    margin-right: 5%;
+  }
+}
+@media screen and (max-width: 60em) {
+  nav {
+    height: 80px;
+  }
+
+  nav > ul {
+    background-color: red;
+    justify-content: left;
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+  }
+
+  nav > ul > li {
+    margin-right: 5%;
+  }
+}
+@media screen and (max-width: 35em) {
+  nav {
+    height: 200px;
+  }
+
+  nav > ul {
+    background-color: pink;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: inherit;
+  }
+
+  nav > ul > li {
+    text-align: center;
+    height: inherit;
+    border: 2px solid orangered;
+    margin-right: unset;
+  }
+}
+@media screen and (max-width: 120em) {
+  .menu, .c2 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    flex: 1;
+  }
+
+  .c4 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    flex: 2;
+  }
+
+  .c1 {
+    border-left: 2px solid black;
+    padding-left: 5px;
+    width: 15.2666666667%;
+  }
+
+  body > .main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    margin: 1.6%;
+  }
+
+  .col {
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    flex: 5;
+  }
+
+  .menu {
+    color: #FFFFFF;
+    background-color: black;
+    font-size: 2em;
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 35em) {
+  .c1 {
+    border-left: 2px solid black;
+    padding-left: 5px;
+    width: 15.2666666667%;
+  }
+
+  .c4 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    flex: 2;
+  }
+
+  .c2 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    flex: 1;
+  }
+
+  body > .main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: column;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    margin: 1.6%;
+  }
+
+  .menu {
+    color: #FFFFFF;
+    background-color: black;
+    font-size: 2em;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/*# sourceMappingURL=scss_general.css.map */

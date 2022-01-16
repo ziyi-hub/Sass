@@ -1,0 +1,15 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 2px;
+}
+
+.item{
+    width: calc(200px);
+    height: calc(200px);
+    background-color: #3d5afe;
+    justify-content: center;
+    color: yellowgreen;
+    font-size: 2em;
+}

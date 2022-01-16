@@ -1,0 +1,93 @@
+section{
+    background-color: grey;
+}
+
+p{
+    margin-left: 50px;
+}
+
+img{
+    background-color: white;
+    margin: 0;
+}
+
+p.img1 > img, p.img2 > img{
+    max-width: 20%;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+/*Cas 1*/
+/*
+.img1, .img2{
+    margin: 0;
+    clear: right;
+}
+*/
+
+
+
+/*Cas 2*/
+/*
+.img1, .img2{
+    margin: 0;
+    float: left;
+}
+*/
+
+
+/*Cas 3*/
+/*
+.img1{
+    margin: 0;
+    float: left;
+}
+
+.img2{
+    margin: 0;
+    float: right;
+}
+*/
+
+
+/*Cas 4*/
+/*
+.img1{
+    margin: 0;
+    float: right;
+}
+
+.img2{
+    margin: 0;
+    float: left;
+}
+*/
+
+
+/*Cas 5*//*
+.img1{
+    margin: 0;
+    float: right;
+}
+
+.img2{
+    margin: 0;
+    float-defer-column: none;
+}
+*/
+
+
+/*Cas 6*/
+/*
+.img1{
+    margin: 0;
+    float: left;
+}
+
+.img2{
+    margin: 0;
+    clear: left;
+    float: left;
+}
+*/
